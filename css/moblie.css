@@ -1,0 +1,140 @@
+@charset "utf-8";
+@import url(font.css);
+
+html {font-size: 0.625rem;}
+body {font-size: 1.6rem; font-family: 'Noto Sans KR',sans-serif; font-weight: 400;}
+
+/* 공통요소 */
+section .inner {padding: 80px 2% 60px;}
+#main h2 {font-size: 4.5rem; margin-bottom: 10px; text-align: center; font-family: 'Maven Pro', sans-serif; font-weight: 600;}
+#main .mainTop {position: relative; margin-bottom: 100px;}
+#main .mainTop .text {color:#666; margin-bottom: 10px; text-align: center;}
+section .btnMore {position: absolute; bottom:-40px; right:0; padding-bottom: 5px; border-bottom: 2px solid #111;}
+section .btnMore:hover {color:#602a19; border-color: #602a19;}
+section .btnMore i {display: inline-block; margin-right: 10px;}
+
+/* 601px ~1200px */
+/* header */
+header {height:90px}
+header .logoArea .lang {font-weight: 700; line-height: 45px;}
+header .inner {padding: 0}
+header .logoArea {position: absolute; left:2%; top: 25px; width: 50%;}
+header #menuBtn {display:inline-block; position: absolute; top: 50%; right:2%; transform: translateY(-50%); background: none; border: none; font-size: 2.8rem; line-height: 100px;}
+header .gnb > ul {display: none;}
+header .util {width: 8%; right: 8%; }
+header .util i {float: left; font-size: 2.4rem; padding-top: 3px;}
+input[type="search"]  {display: none;}
+header .util form button {width: 32px; height: 32px;}
+/* visualArea */
+#visualArea {overflow: hidden;}
+#visualArea .mainVisual {margin: 0 2%; width: 96%; height: 90vh; overflow: hidden;}
+.mainVisual .swiper-wrapper .swiper-slide figure {float: none; margin:0; width: 100%; height: auto;}
+.mainVisual .swiper-wrapper .swiper-slide figure img {width: 1426px; height: auto; padding-bottom: 50px;}
+.mainVisual .swiper-wrapper .swiper-slide .textArea {top:50%; transform: translateY(-20%);}
+.textArea .bText {font-size: 8rem;}
+.textArea .mText {font-size: 3.2rem;}
+.textArea .tag {font-size: 2rem;}
+#visualAreaBg {width: 70%; height: 60vh;}
+#visualArea .verticalArea .vertical {display: none;}
+
+/* mobileGnb */
+#mobileGnb {position: fixed; right: -100%; width: 600px; height: 100vh; z-index: 100; background: #fff; display: block; }
+#mobileGnb .logoArea {padding: 2% 4%; box-sizing: border-box;  border-bottom: 1px solid #e4dfdd; position: relative;}
+aside .logoArea .logo {width: 150px; float: left; margin-right: 40px; line-height: 45px;}
+#mobileGnb .logoArea .logo  img {max-width:100%; height: auto;}
+#mobileGnb .logoArea .lang {font-weight: 700; line-height: 45px; color: #999999;}
+#mobileGnb .logoArea .on {color:#111}
+#mobileGnb .logoArea a + a:before {content: '';
+display: inline-block; width: 2px; height:10px; background: #ccc;  line-height: 1; margin: 0 10px;}
+.utilM {position: absolute; top:50%; right:43%; transform: translateY(-50%);}
+#btnGnbHide {position: absolute; top:0; right:0; background: #fff; color:#111; width: 69px; height: 69px; font-size: 2.8rem; border:none;}
+
+#mobileBg {position: fixed; width: 100vw; height:100vh; background: rgba(0,0,0,0.5);z-index: 30; display: none;}
+/* mobileGnb-gnbM */
+.gnbM > ul > li {position: relative; width: 100%; box-sizing: border-box; border-bottom: 1px solid #ddd;}
+.gnbM > ul > li:before {content: ''; position: absolute; top: 50%; right: 4%; transform: translateY(-50%);width:16px; height:16px; background: url(../img/ico/angle-down.png) no-repeat center; opacity: 0.6;}
+.gnbM > ul > li > a {display: block; padding: 20px; font-size: 2rem;}
+.gnbM > ul > li > .depth2 {position: absolute; width: 100%; display: none;}
+.gnbM > ul > li > .depth2 > li {padding-left: 40px; box-sizing: border-box; line-height: 2.5; background:whitesmoke;}
+.gnbM > ul > li > .depth2 > li a {display: block;}
+
+/* collection - tabMenu */
+.tabMenu .tabNav > li > .depth2 > li > a {font-size: 1.7rem}
+.tabMenu .tabNav {margin-bottom: 20px;}
+.tabCont .tabSlide {float: none; width: 100%; height: 600px; margin: 0 auto; margin-bottom: 30px;}
+.tabCont .swiper-button-next {display: none;}
+.tabCont .tabSlide .swiper-slide img {width: 100%; height:auto}
+.tabCont .textArea {float: none; padding-top: 0;}
+.tabCont .textArea .title {font-size: 3.6rem;}
+.tabCont .textArea .subTit {padding: 20px 0; font-size: 2.8rem;}
+.tabCont .textArea .mTitle span {font-size: 1.6rem;}
+.tabCont .textArea .color{float:left; width:50%;}
+.tabCont .textArea .color li {margin-left: 10px; width:30%;}
+
+/* main.news */
+.newsList .leftArea {width: 100%; float: none;}
+.newsList .leftArea li .newsText {float: left; width: 60%; padding: 20px 0 10px 20px;}
+.newsList .leftArea .newsText .title {font-size: 1.8rem;}
+.newsList .leftArea .newsText .text {margin: 15px 0;}
+.newsList .rightArea {height: 750px}
+.newsList .rightArea figure{height: 500px;}
+.newsList .rightArea {float: none; width:100%; margin-top: 15px;}
+
+/* main.sns */
+.snsList li {width: calc(100%/2 - 10px); margin: 0 5px 4px;}
+/* footer */
+footer .inner {padding: 50px 2%;}
+footer .ftLeft {float: left; width: 70%;}
+footer .ftLeft .ftLogo {width: 20%;}
+footer .ftInfo {width: 70%; margin-left: 50px;}
+.topBtn {right: 4%; width: 30px; height: 30px; line-height: 30px; padding:0; background: rgba(0,0,0,0.7);}
+
+/* 모바일 */
+@media screen and (max-width: 600px){
+    /* 공통요소 */
+    section .inner {padding: 80px 2% 100px;}
+    #main.news h2, #main.sns h2 {font-weight: 700;}
+    #main h2 {margin-bottom: 20px;}
+    section .btnMore {bottom:-50px;}
+    /* mobileGnb */
+    #mobileGnb {width: 100%;}
+    /* header */
+    header .logoArea .logo {width: 127px;}
+    header .logoArea .lang {display: none;}
+    header .util {width: 12%; right: 10%}
+    /* mainVisual */
+    #visualArea .mainVisual {height: 90vh;}
+    .mainVisual .swiper-wrapper .swiper-slide figure {position: absolute; bottom:0; width: 100%; height: 60%;}
+    .mainVisual .swiper-wrapper .swiper-slide figure img {max-height: 100%; width: auto;}
+    .mainVisual .swiper-wrapper .swiper-slide .textArea {top: 150px}
+    .textArea .bText {font-size: 5rem;}
+    .textArea .mText {font-size: 3rem;}
+    .textArea .tag {font-size: 1.7rem;}
+    #visualAreaBg {width: 100%; height: 60vh;}
+    /* tabMenu */
+    .tabMenu .tabNav {margin-bottom: 60px;}
+    .tabMenu .tabNav > li {width: 100%;}
+    .tabMenu .tabNav > li > .depth2 {padding-top:5px}
+    .tabCont .tabSlide {float: none; width: 100%; height: 400px; margin: 0 auto; margin-bottom: 30px;}
+    .tabMenu .tabNav > li > a {font-size: 2rem;}
+    .tabMenu .tabNav > li > .depth2 > li > a {font-size: 1.6rem; padding: 10px 0; margin: 0 5px;}
+    .tabMenu .tabNav > li > .depth2 {width: 70%;}
+    .tabCont .textArea .color{float: none; width:70%;}
+    .tabCont .textArea .color li {margin-left: 10px; width:30%;}
+    /* newsList */
+    .newsList .rightArea {height: auto; margin-bottom: 30px;}
+    .newsList .rightArea .title {font-weight: 500; margin: 40px 0 20px;}
+    .newsList .rightArea figure{height: 400px;}
+    .newsList .leftArea li .newsText {padding: 15px 5px 10px 20px;}
+    /* sns */
+    #main.sns .mainTop .snsArea {float:right; margin: 15px 0 40px;}
+    .mainTop .snsArea img {vertical-align: middle; margin-right: 3px;}
+    .mainTop .snsArea .follow {margin-left: 10px;}
+    /* footer */
+    footer .ftLeft {float: none; width: 100%;}
+    footer .ftLeft .ftLogo {width: 20%; float: none;}
+    footer .ftLeft .ftLogo img {max-width: 100%; margin-bottom: 5px;}
+    footer .ftInfo {float: none; width: 100%; margin: 0;}
+    footer .ftInfo > p {margin-bottom: 10px;}
+    .topBtn {bottom: 2%;}
+}

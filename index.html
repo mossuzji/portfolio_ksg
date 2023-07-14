@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ks벽지 - [홈]</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/moblie.css" media="all and (max-width:1200px)">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="inner">
+            <div class="logoArea">
+                <h1 class="logo"><a href="index.html"><img src="img/ico/logo.png" alt=""><span class="blind">KS 벽지</span></a></h1>
+                <a href="#" class="lang kr on">KOR</a>
+                <a href="#" class="lang en">ENG</a>
+            </div>
+            <a herf="#" id="menuBtn">
+                <i class="fas fa-bars"></i>
+            </a>
+            
+            <nav class="gnb">
+                <ul class="depth1 clear">
+                    <li>
+                        <a href="#">케이에스더블유</a>
+                        <ul class="depth2">
+                            <li><a href="#">계열사</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">회사소개</a>
+                        <ul class="depth2">
+                            <li><a href="#">회사소개</a></li>
+                            <li><a href="#">CEO 인사말</a></li>
+                            <li><a href="#">LOGO 소개</a></li>
+                            <li><a href="#">채용정보</a></li>
+                            <li><a href="#">위치안내</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">제품소개</a>
+                        <ul class="depth2">
+                            <li><a href="#">제품소개</a></li>
+                            <li><a href="#">실크 브랜드</a></li>
+                            <li><a href="#">합지 브랜드</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">홍보센터</a>
+                        <ul class="depth2">
+                            <li><a href="#">인증 및 수상</a></li>
+                            <li><a href="#">뉴스 및 언론 홍보</a></li>
+                            <li><a href="#">SNS</a></li>
+                            <li><a href="#">이벤트</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">인테리어</a>
+                        <ul class="depth2">
+                            <li><a href="#">시공사례</a></li>
+                            <li><a href="#">인테리어<br>스타일링</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">고객센터</a>
+                        <ul class="depth2">
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">디자인상담</a></li>
+                            <li><a href="#">1:1문의</a></li>
+                            <li><a href="#">대리점 찾기</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <!-- //gnb -->
+            <div class="util clear">
+                <i class="far fa-heart"></i>
+                <span class="gnbWish">0</span>
+                <form action="">
+                    <input type="search" id='inputSearch' placeholder="제품번호를 입력해주세요" required>
+                    <button type="submit"></button>
+                </form>
+            </div>
+        </div>
+    </header>
+    <div id="hdBg"></div>
+    <!-- //header -->
+    <aside id="mobileGnb">
+        <div class="logoArea">
+            <h1 class="logo"><a href="index.html"><img src="img/ico/logo.png" alt=""><span class="blind">KS 벽지</span></a></h1>
+            <a href="#" class="lang kr on">KOR</a>
+            <a href="#" class="lang en">ENG</a>
+            <div class="utilM">
+                <i class="far fa-heart"></i>
+                <span class="gnbWish">0</span>
+            </div>
+            <button id="btnGnbHide">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <!-- //logoArea -->
+        <nav class="gnbM">
+            <ul class="depth1 clear">
+                <li>
+                    <a href="#">케이에스더블유</a>
+                    <ul class="depth2">
+                        <li><a href="#">계열사</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">회사소개</a>
+                    <ul class="depth2">
+                        <li><a href="#">회사소개</a></li>
+                        <li><a href="#">CEO 인사말</a></li>
+                        <li><a href="#">LOGO 소개</a></li>
+                        <li><a href="#">채용정보</a></li>
+                        <li><a href="#">위치안내</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">제품소개</a>
+                    <ul class="depth2">
+                        <li><a href="#">제품소개</a></li>
+                        <li><a href="#">실크 브랜드</a></li>
+                        <li><a href="#">합지 브랜드</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">홍보센터</a>
+                    <ul class="depth2">
+                        <li><a href="#">인증 및 수상</a></li>
+                        <li><a href="#">뉴스 및 언론 홍보</a></li>
+                        <li><a href="#">SNS</a></li>
+                        <li><a href="#">이벤트</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">인테리어</a>
+                    <ul class="depth2">
+                        <li><a href="#">시공사례</a></li>
+                        <li><a href="#">인테리어<br>스타일링</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">고객센터</a>
+                    <ul class="depth2">
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">디자인상담</a></li>
+                        <li><a href="#">1:1문의</a></li>
+                        <li><a href="#">대리점 찾기</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+    <div id="mobileBg"></div>
+    <!-- //mobileGnb -->
+    <section id="visualArea">
+        <!-- Swiper -->
+        <div class="swiper mainVisual">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide clear">
+                    <figure><img src="img/main/main_slide01.jpg" alt=""></figure>
+                    <div class="textArea">
+                        <p class="bText">이룸</p>
+                        <p class="mText">나만의 공간을 이루다</p>
+                        <p class="tag">#프리미엄 #친환경 #실크벽지 #고급패턴</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <figure><img src="img/main/main_slide02.jpg" alt=""></figure>
+                    <div class="textArea">
+                        <p class="bText">더뷰</p>
+                        <p class="mText">벽지, 그 이상의<span>공간을 보여주다</span></p>
+                        <p class="tag">#프리미엄 #친환경 #실크벽지 #감각적인 디자인</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <figure><img src="img/main/main_slide03.jpg" alt=""></figure>
+                    <div class="textArea">
+                        <p class="bText">벨루체</p>
+                        <p class="mText">당신이 꿈꾸는<span>라이프스타일이 담긴 공간</span></p>
+                        <p class="tag">#친환경 #합지벽지 #모던디자인 #심플한컬러</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <figure><img src="img/main/main_slide04.jpg" alt=""></figure>
+                    <div class="textArea">
+                        <p class="bText">더홈</p>
+                        <p class="mText">우리집에 꼭 맞는 스타일링</p>
+                        <p class="tag">#소폭합지 #합리적가격 #깔끔한디자인</p>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div> -->
+            <div class="swiper-pagination"></div>
+        </div>
+        <!-- //swiper -->
+        <div class="verticalArea">
+            <p class="vertical">KS WALLCOVERINGS COLLECTION</p>
+        </div>
+    </section>
+    <div id="visualAreaBg"></div>
+    <!-- //visualArea -->
+
+    <section id="main" class="collection">
+        <div class="inner">
+            <h2>COLLECTION</h2>
+            <div class="tabMenu">
+                <ul class="tabNav clear">
+                    <li>
+                        <a href="#" class="on">실크 브랜드</a>
+                        <ul class="depth2 silk">
+                            <li><a href="#" class="on">더뷰 The View</a></li>
+                            <li><a href="#">이룸 E Room</a></li>
+                            <li><a href="#">방염</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">합지 브랜드</a>
+                        <ul class="depth2 brand">
+                            <li><a href="#">벨루체 VELUCE</a></li>
+                            <li><a href="#">더홈 The Home</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- //tabNav -->
+                <div class="tabCont">
+                    <div id="tab01" class="clear">
+                        <!-- Swiper -->
+                        <div class="swiper tabSlide">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="img/main/silk1_01.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/main/silk1_02.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/main/silk1_03.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/main/silk1_04.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/main/silk1_05.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/main/silk1_06.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <!-- //tabSlide -->
+                        <div class="textArea">
+                            <p class="title">더뷰 The View</p>
+                            <p class="subTit">"벽지, 그 이상의 공간을 보다"</p>
+                            <p class="mTitle">
+                                <span>더뷰는 스타일리시한 컬러와 패턴 디자인으로</span>
+                                <span>트렌디함을 갖춘 고급 실크벽지 컬렉션입니다.</span>
+                            </p>
+                            <p class="mTitle">
+                                <span>내 공간을 특별하게 만드는 한 끗 차이.</span>
+                                <span>더뷰가 수놓은 감각적인 디자인으로</span>
+                                <span>내가 가장 좋아하는 공간을 만들어보세요.</span>
+                            </p>
+                            <ul class="color">
+                                <li>
+                                    <a href="#"><img src="img/main/3031-6.jpg" alt=""></a>
+                                    <p class="desc">3031-6</p>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="img/main/3032-5.jpg" alt=""></a>
+                                    <p class="desc">3032-5</p>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="img/main/3031-4.jpg" alt=""></a>
+                                    <p class="desc">3031-4</p>
+                                </li>
+                            </ul>
+                            <!-- //color -->
+                        </div>
+                        <a href="#" class="btnMore"><i class="fas fa-arrow-right"></i>제품 더보기</a>
+                        <!-- //textArea -->
+                    </div>
+                    <!-- //tab01 -->
+                    <div id="tab02" class="clear">
+                        <!-- Swiper -->
+                        <div class="swiper tabSlide">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="img/main/brand1_01.jpg" alt=""></div>
+                                <div class="swiper-slide"><img src="img/main/brand1_02.jpg" alt=""></div>
+                                <div class="swiper-slide"><img src="img/main/brand1_03.jpg" alt=""></div>
+                                <div class="swiper-slide"><img src="img/main/brand1_04.jpg" alt=""></div>
+                                <div class="swiper-slide"><img src="img/main/brand1_05.jpg" alt=""></div>
+                                <div class="swiper-slide"><img src="img/main/brand1_06.jpgg" alt=""></div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                        <!-- //tabSlide -->
+                        <div class="textArea">
+                            <p class="title">더뷰 The View</p>
+                            <p class="subTit">"벽지, 그 이상의 공간을 보다"</p>
+                            <p class="mTitle">
+                                <span>더뷰는 스타일리시한 컬러와 패턴 디자인으로</span>
+                                <span>트렌디함을 갖춘 고급 실크벽지 컬렉션입니다.</span>
+                            </p>
+                            <p class="mTitle">
+                                <span>내 공간을 특별하게 만드는 한 끗 차이.</span>
+                                <span>더뷰가 수놓은 감각적인 디자인으로</span>
+                                <span>내가 가장 좋아하는 공간을 만들어보세요.</span>
+                            </p>
+                            <ul class="color">
+                                <li>
+                                    <a href="#"><img src="img/main/theview_01.jpg" alt=""></a>
+                                    <p class="desc">3009-27</p>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="img/main/theview_02.jpg" alt=""></a>
+                                    <p class="desc">3009-7</p>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="img/main/theview_03.jpg" alt=""></a>
+                                    <p class="desc">3009-1</p>
+                                </li>
+                            </ul>
+                            <!-- //color -->
+                        </div>
+                        <!-- //textArea -->
+                        <a href="#" class="btnMore"><i class="fas fa-arrow-right"></i>제품 더보기</a>
+                    </div>
+                </div>
+                <!-- //tabInfo -->
+            </div>
+            <!-- //tabMenu -->
+        </div>
+    </section>
+    <!-- //main.collection -->
+    <section id="main" class="news">
+        <div class="inner">
+            <div class="mainTop">
+                <h2>NEWS</h2>
+                <p class="text">KS벽지의 새로운 소식을 전합니다</p>
+                <a href="#" class="btnMore"><i class="fas fa-arrow-right"></i>뉴스 더보기</a>
+            </div>
+            <div class="newsList clear">
+                <ul class="rightArea">
+                    <li>
+                        <a href="#"> 
+                            <figure></figure>
+                            <div class="newsText">
+                                <p class="title">벨라필콘서트콰이어 제10회 정기연주회 후원</p>
+                                <div class="text">
+                                    <p>벨라필콘서트콰이어는 예술지향과 소통을 모토로 2014년 12월 고양시를 기반으로 창단된 연주 중심의 아마추어 혼성합창단으로 지휘는 서울대 성악과, 독일 슈튜트가르트 국립음대 디플롬, 에센 폴크방 국립음대 석사를 졸업한 황유순 지휘자가 맡고있다.</p>
+                                </div>
+                                <time datetime="2023-06-09">2023.06.09</time>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <!-- //rightArea -->
+                <ul class="leftArea">
+                    <li>
+                        <a href="#">
+                            <figure></figure>
+                            <div class="newsText">
+                                <p class="title">[신제품출시] E-ROOM</p>
+                                <div class="text"></div>
+                                <time datetime="2023-01-06">2023.01.06</time>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <figure></figure>
+                            <div class="newsText">
+                                <p class="title">벽지 제조기업 KS더블유, 천만불 수출의 탑 수상</p>
+                                <div class="text"><p>벽지 제조기업 케이에스더블유(KS더블유)는 제 59회 무역의날 기념식에서 '천만불 수출의 탑' 을 수상했다고 5일 밝혔다. 무역의 날은 1년간의 수출 실적을 기준으로</p></div>
+                                <time datetime="2023-01-03">2023.01.03</time>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <figure></figure>
+                            <div class="newsText">
+                                <p class="title">[신제품출시] THE HOME</p>
+                                <p class="text">
+                                    KS벽지가 '23년 소폭합지 더홈(THE HOME)'을 선보인다. <br>
+                                    이번 출시된 '23년 소폭합지 더홈'은 깔끔하고 모던한 디자인으로 합리적인 라이프
+                                </p>
+                                <time datetime="2022-10-20">2022.10.20</time>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <!-- //leftArea -->
+            </div>
+            <!-- //newsList -->
+        </div>
+    </section>
+    <!-- //main.news -->
+    <section id="main" class="sns">
+        <div class="inner">
+            <div class="mainTop clear">
+                <h2>SNS</h2>
+                <p class="text">KS벽지의 더 많은 소식을 SNS로 만나보세요</p>
+                <div class="snsArea">
+                    <img src="img/ico/sns-icon.jpg" alt="">
+                    <span class="snsId">kswallcoverings</span>
+                    <a href="#" class="follow">팔로우</a>
+                </div>
+            </div>
+            <!-- //mainTop -->
+            <ul class="snsList clear">
+                <li>
+                    <img src="img/main/sns01.jpg" alt="">
+                    <div class="hoverTxt">
+                        <span>[COLOR OF BLUE]</span>
+                        <p class="text">여름의 컬러, 블루 인테리어</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="img/main/sns02.jpg" alt="">
+                    <div class="hoverTxt">
+                        <p class="text">[EROOM] Cane Weaving</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="img/main/sns03.jpg" alt="">
+                    <div class="hoverTxt">
+                        <p class="text">[EROOM] 2105</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="img/main/sns04.jpg" alt="">
+                    <div class="hoverTxt">
+                        <p class="text">[EROOM] 2095</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="img/main/sns05.jpg" alt="">
+                    <div class="hoverTxt">
+                        <p class="text">[EROOM] 2101-5</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="img/main/sns06.jpg" alt="">
+                    <div class="hoverTxt">
+                        <p class="text">[EROOM] 2109-1,4</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="img/main/sns07.jpg" alt="">
+                    <div class="hoverTxt">
+                        <span>[COLOR OF YELLOW]</span>
+                        <p class="text">봄의 컬러, 옐로우 인테리어</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="img/main/sns08.jpg" alt="">
+                    <div class="hoverTxt">
+                        <p class="text">[EROOM] 2106-5,7</p>
+                    </div>
+                </li>
+            </ul>
+            <!-- //snsList -->
+        </div>
+    </section>
+    <!-- //main.sns -->
+    <footer>
+        <div class="inner clear">
+            <div class="ftLeft">
+                <div class="ftLogo">
+                    <img src="img/ico/logo-footer.png" alt="">
+                </div>
+                <div class="ftInfo">
+                    <p class="ftLink">
+                        <strong><a href="#">개인정보처리방침</a></strong>
+                        <span><a href="#">이메일무단수집거부</a></span>
+                        <span><a href="#">이용약관</a></span>
+                    </p>
+                    <p class="ftAbout">
+                        <span>대표자 : 박식순 <span>사업자등록번호 : 365-85-01709</span></span>
+                        <span>주소 : 경기도 이천시 장호원읍 서동대로 8798-50</span>
+                        <span>대표번호 : 031-642-6111</span>
+                    </p>
+                    <p class="copy">© 2022 KSWALLCOVERINGS ALL Rights Reserved. Created by masstige</p>
+                </div>
+            </div>
+            <!-- //ftInfo -->
+            <div class="familySite">
+                <button id="familyBtn">패밀리 사이트 <i class="fas fa-plus"></i></button>
+                <div class="siteBox">
+                    <p class="title">패밀리사이트</p>
+                    <p class="text">
+                        <span>KS벽지 패밀리 사이트를 소개합니다.</span>
+                        <span>아래계열사를 선택하시면 해당 홈페이지로 이동합니다.</span>
+                    </p>
+                    <ul class="linkWrap clear">
+                        <li><a href="#">KS더블유</a></li>
+                        <li><a href="#">제일벽지</a></li>
+                        <li><a href="#">케이엔피이노텍</a></li>
+                        <li><a href="#">코스모스벽지</a></li>
+                        <li><a href="#">케이엔피물류</a></li>
+                   </ul>
+                <button id="closeBtn"><i class="fas fa-times"></i></button>
+                </div>
+            </div>
+        </div>
+    <footer>
+    <a href="#" class="topBtn"><i class="fas fa-chevron-up"></i></a>
+    <script>
+        var swiper = new Swiper(".mainVisual", {
+            slidesPerView: 1,
+            loop: true,
+            autoplay: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+
+        var swiper = new Swiper(".tabSlide", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            loop: true,
+            navigation: {nextEl: ".swiper-button-next"}
+        });
+    </script>
+</body>
+</html>
